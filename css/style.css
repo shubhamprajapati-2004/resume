@@ -1,14 +1,14 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
   color: #000;
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Main container */
 .cv-container {
   background: #fff;
   padding: 40px 50px;
@@ -16,9 +16,10 @@ body {
   width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   margin: 40px 0;
+  border-radius: 6px;
 }
 
-/* Header */
+/* Header section */
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -51,15 +52,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* SAS badge image */
 .sas-badge {
   width: 120px;
-  height: 120px;
+  height: auto;
   object-fit: contain;
-  border: none;
 }
 
-/* Sections */
+/* Section styles */
 section {
   margin-top: 25px;
 }
@@ -97,7 +96,7 @@ ul li {
   margin-top: 10px;
 }
 
-/* Download Button */
+/* Download button */
 .download-btn {
   position: fixed;
   bottom: 20px;
@@ -108,7 +107,7 @@ ul li {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transition: background 0.3s;
 }
 
@@ -123,11 +122,16 @@ footer {
   color: #555;
 }
 
-/* Responsive */
+/* ✅ Improved mobile responsiveness */
 @media (max-width: 768px) {
+  body {
+    background: #fff;
+  }
+
   .cv-container {
     padding: 25px 20px;
-    margin: 20px 10px;
+    margin: 0;
+    box-shadow: none;
   }
 
   .header-content {
@@ -136,9 +140,21 @@ footer {
     text-align: center;
   }
 
+  .header-left h1 {
+    font-size: 1.6rem;
+  }
+
   .sas-badge {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    margin-top: 10px;
+  }
+
+  .multi-col {
+    columns: 1;
+  }
+
+  section {
+    margin-top: 20px;
   }
 
   .download-btn {
@@ -148,7 +164,26 @@ footer {
   }
 }
 
-/* Print */
+/* ✅ Optional: Extra small phones */
+@media (max-width: 400px) {
+  .header-left h1 {
+    font-size: 1.4rem;
+  }
+
+  .designation {
+    font-size: 0.9rem;
+  }
+
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+
+  .sas-badge {
+    width: 75px;
+  }
+}
+
+/* Print-friendly */
 @media print {
   body {
     background: white;
@@ -157,7 +192,8 @@ footer {
     box-shadow: none;
     margin: 0;
   }
-  .download-btn, footer {
+  .download-btn,
+  footer {
     display: none;
   }
 }
