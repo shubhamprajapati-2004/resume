@@ -1,0 +1,163 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-container {
+  background: #fff;
+  padding: 40px 50px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+/* Header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-left h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.designation {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* SAS badge image */
+.sas-badge {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: none;
+}
+
+/* Sections */
+section {
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 5px 0 5px 20px;
+  padding: 0;
+}
+
+ul li {
+  line-height: 1.4;
+}
+
+.multi-col {
+  columns: 2;
+  list-style-type: disc;
+}
+
+.sign {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Download Button */
+.download-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 25px 20px;
+    margin: 20px 10px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sas-badge {
+    width: 100px;
+    height: 100px;
+  }
+
+  .download-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+  }
+}
+
+/* Print */
+@media print {
+  body {
+    background: white;
+  }
+  .cv-container {
+    box-shadow: none;
+    margin: 0;
+  }
+  .download-btn, footer {
+    display: none;
+  }
+}
