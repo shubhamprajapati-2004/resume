@@ -3,165 +3,249 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official CV of Shubham Prajapati — Statistical Programmer skilled in SAS and R." />
-  <title>Shubham Prajapati - CV</title>
+  <meta name="description" content="Official CV of Shubham Prajapati — Statistical Programmer" />
+  <title>Shubham Prajapati - Statistical Programmer</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="cv-container fade-in">
+  <div class="cv-container">
     
-    <!-- Enhanced Header -->
+    <!-- Header Section -->
     <header class="cv-header">
       <div class="header-content">
         <div class="header-left">
           <h1>SHUBHAM PRAJAPATI</h1>
           <p class="designation">Statistical Programmer</p>
           <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> <a href="mailto:shubhamprajapati672004@gmail.com">shubhamprajapati672004@gmail.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> MAHESANA – GUJARAT</p>
-            <p><i class="fas fa-phone"></i> 6352895094</p>
-            <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/shubham-prajapati-b4653b322" target="_blank">LinkedIn Profile</a></p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:shubhamprajapati672004@gmail.com">shubhamprajapati672004@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Mahesana, Gujarat</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>6352895094</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="http://www.linkedin.com/in/shubham-prajapati-b4653b322" target="_blank">LinkedIn Profile</a>
+            </div>
           </div>
         </div>
-
         <div class="header-right">
-          <img src="images/base-sas-badge.png" alt="Base SAS Certification Badge" class="sas-badge">
+          <div class="badge-container">
+            <img src="images/base-sas-badge.png" alt="SAS Certified" class="sas-badge">
+            <span class="badge-label">SAS Certified</span>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- Enhanced Main Content -->
-    <main>
-      <section class="fade-in">
-        <h2><i class="fas fa-bullseye"></i> OBJECTIVE</h2>
-        <p>
-          A recent B.Com (Statistics) graduate with experience in SAS and R, gained through an internship at
-          <strong>Stat Code Solutions LLP</strong>. Eager to apply my skills in data analysis, statistics, and data visualization
-          to contribute to data-driven decision-making and support business insights in a growing organization.
-        </p>
-      </section>
+    <!-- Professional Summary -->
+    <section class="summary section-card">
+      <div class="section-header">
+        <i class="fas fa-user-tie"></i>
+        <h2>PROFESSIONAL SUMMARY</h2>
+      </div>
+      <p>Passionate Statistical Programmer with hands-on experience in CDISC SDTM and ADaM standards through academic projects and practical training. Certified SAS programmer with strong technical skills in clinical data programming and R. Proven ability to quickly learn and apply new concepts in clinical trial environments.</p>
+    </section>
 
-      <section class="fade-in">
-        <h2><i class="fas fa-graduation-cap"></i> PROFESSIONAL TRAINING</h2>
-        <p class="highlight"><strong>Stat Code Solutions LLP</strong> — 8 Months (SAS, R, CLINICAL)</p>
-
-        <h3><i class="fab fa-suse"></i> SAS Programming</h3>
+    <!-- Professional Experience -->
+    <section class="experience section-card">
+      <div class="section-header">
+        <i class="fas fa-briefcase"></i>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+      </div>
+      
+      <div class="job">
+        <div class="job-header">
+          <h3>Statistical Programmer Intern</h3>
+          <div class="job-meta">
+            <span class="company">Rang Tech</span>
+            <span class="duration">September 2025 – Present</span>
+          </div>
+        </div>
         <ul>
-          <li><strong>Base SAS:</strong> Import/Export, Data Merging, PROC PRINT, PROC FREQ, PROC MEANS, PROC TRANSPOSE, DO Loops, Arrays, ODS (RTF, PDF)</li>
-          <li><strong>Advanced SAS:</strong> SQL Procedure, Macros</li>
-          <li><strong>Clinical SAS:</strong> SDTM (DM, CM, SV, EX, MH datasets), ADSL datasets, Tables & Listings</li>
+          <li>Programmed and validated 20+ SDTM datasets in clinical trials following CDISC SDTM IG 3.2/3.3</li>
+          <li>Developed 5+ ADaM datasets including ADSL, ADAE, ADVS for statistical analysis and regulatory submissions</li>
+          <li>Performed CRF annotation and collaborated with clinical data management teams</li>
+          <li>Executed Pinnacle 21 validation checks and resolved compliance issues for FDA submissions</li>
+          <li>Performed quality control checks on SAS programs and clinical databases</li>
         </ul>
+      </div>
 
-        <h3><i class="fab fa-r-project"></i> R Programming</h3>
+      <div class="job">
+        <div class="job-header">
+          <h3>R Programming Instructor</h3>
+          <div class="job-meta">
+            <span class="company">Private Online Classes</span>
+            <span class="duration">January 2025 – June 2025</span>
+          </div>
+        </div>
         <ul>
-          <li><strong>Data Manipulation:</strong> dplyr (mutate, filter, select, arrange, summarize, group_by, joins)</li>
-          <li><strong>Data Structures:</strong> Vectors, Lists, Data Frames, Matrices, Factors</li>
-          <li><strong>String & Date Manipulation:</strong> stringr, lubridate</li>
-          <li><strong>Looping & Functional Programming:</strong> for loops, while loops, apply functions</li>
+          <li>Trained 50+ clinical research professionals in R programming for clinical data analysis</li>
+          <li>Developed curriculum covering data manipulation, statistical analysis, and clinical reporting</li>
+          <li>Taught dplyr, tidyr, stringr, lubricate for clinical data applications</li>
+          <li>Created hands-on exercises using real clinical trial data examples</li>
+          <li>Maintained 95% student satisfaction rate through interactive teaching methods</li>
         </ul>
-      </section>
+      </div>
 
-      <section class="fade-in">
-        <h2><i class="fas fa-project-diagram"></i> PROJECT</h2>
-        <h3>Clinical SAS Project (Internship – Stat Code Solutions LLP)</h3>
-        <p><strong>Project Title:</strong> An Open-Label, Single-Dose Study in Healthy Japanese and Caucasian Participants to Evaluate the Safety, Tolerability, and Pharmacokinetics of XXX-YYY</p>
-        <p><strong>Role:</strong> Clinical SAS Intern</p>
-        <p><strong>Organization:</strong> Stat Code Solutions LLP</p>
-        <p><strong>Key Responsibilities:</strong></p>
+      <div class="job">
+        <div class="job-header">
+          <h3>Clinical SAS Trainee</h3>
+          <div class="job-meta">
+            <span class="company">Stat Code Solutions LLP</span>
+            <span class="duration">May 2024 – August 2024</span>
+          </div>
+        </div>
         <ul>
-          <li>Developed SDTM domains (DM, MH, EX, SV, CM) following CDISC guidelines.</li>
-          <li>Created ADSL domains for subject-level analysis.</li>
-          <li>Generated Tables and Listings.</li>
+          <li>Developed SDTM domains including DM, EX, CM, AE, VS</li>
+          <li>Studied controlled terminology requirements for clinical trial data standardization</li>
+          <li>Learned CDISC implementation and clinical data standards compliance</li>
+          <li>Gained experience in clinical trial data workflow from CRF to analysis-ready datasets</li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="fade-in">
-        <h2><i class="fas fa-briefcase"></i> EXPERIENCE</h2>
-        <h3>R Programming Instructor — Private Online Classes (Jan 2025 – Present)</h3>
-        <ul>
-          <li>Conduct private online classes focused on practical R programming skills.</li>
-          <li>Design and deliver structured lessons covering core R concepts, data manipulation, and reporting.</li>
-          <li>Teach usage of essential R packages including dplyr, stringr, lubridate.</li>
-          <li>Provide hands-on coding sessions and individual support.</li>
-        </ul>
-      </section>
-
-      <section class="fade-in">
-        <h2><i class="fas fa-university"></i> EDUCATION</h2>
-        <p><strong>HEMCHANDRACHARYA NORTH GUJARAT UNIVERSITY</strong> — 2021–2024</p>
-        <ul>
-          <li>B.Com (Statistics)</li>
-          <li>CGPA – 8.09</li>
-        </ul>
-      </section>
-
-      <section class="fade-in">
-        <h2><i class="fas fa-star"></i> EXPERTISE</h2>
-        <div class="skills-container">
-          <span class="skill-tag">SAS Base</span>
+    <!-- Technical Skills -->
+    <section class="skills section-card">
+      <div class="section-header">
+        <i class="fas fa-code"></i>
+        <h2>TECHNICAL SKILLS</h2>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Statistical Programming</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Base SAS</span>
           <span class="skill-tag">Advanced SAS</span>
-          <span class="skill-tag">Macros</span>
+          <span class="skill-tag">SAS Macros</span>
+          <span class="skill-tag">PROC SQL</span>
+          <span class="skill-tag">PROC FREQ</span>
+          <span class="skill-tag">PROC MEANS</span>
+          <span class="skill-tag">PROC TRANSPOSE</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Clinical Data Standards</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">CDISC SDTM</span>
+          <span class="skill-tag">CDISC ADaM</span>
+          <span class="skill-tag">CDISC Controlled Terminology</span>
+          <span class="skill-tag">CRF Annotation</span>
+          <span class="skill-tag">TLFs</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Tools & Technologies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">SAS 9.4</span>
+          <span class="skill-tag">Pinnacle 21</span>
+          <span class="skill-tag">RStudio</span>
+          <span class="skill-tag">Microsoft Office</span>
           <span class="skill-tag">R Programming</span>
-          <span class="skill-tag">MS PowerPoint</span>
-          <span class="skill-tag">MS Word</span>
+          <span class="skill-tag">dplyr</span>
+          <span class="skill-tag">stringr</span>
+          <span class="skill-tag">lubridate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Languages -->
+    <div class="grid-2">
+      <section class="education section-card">
+        <div class="section-header">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>EDUCATION</h2>
+        </div>
+        <div class="education-item">
+          <h3>Hemchandracharya North Gujarat University</h3>
+          <p class="duration">2021-2024</p>
+          <p>B.Com (Statistics)</p>
+          <p class="cgpa">CGPA: 8.09</p>
         </div>
       </section>
 
-      <section class="fade-in">
-        <h2><i class="fas fa-award"></i> CERTIFICATIONS</h2>
-        <ul>
-          <li>BASE SAS certified.</li>
-          <li>R Programming for Beginners - Issued by Simplilearn.</li>
-          <li>Certificate in Computer Concepts (CCC-BAOU).</li>
-        </ul>
-      </section>
-
-      <section class="fade-in">
-        <h2><i class="fas fa-language"></i> LANGUAGES</h2>
-        <div class="skills-container">
-          <span class="skill-tag">Gujarati</span>
-          <span class="skill-tag">Hindi</span>
-          <span class="skill-tag">English</span>
+      <section class="languages section-card">
+        <div class="section-header">
+          <i class="fas fa-language"></i>
+          <h2>LANGUAGES</h2>
+        </div>
+        <div class="language-list">
+          <div class="language-item">
+            <span class="language-name">English</span>
+            <span class="language-level">Professional</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Hindi</span>
+            <span class="language-level">Native</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Gujarati</span>
+            <span class="language-level">Native</span>
+          </div>
         </div>
       </section>
+    </div>
 
-      <section class="fade-in">
-        <h2><i class="fas fa-file-signature"></i> DECLARATION</h2>
-        <p>I hereby declare that all the information provided is true and correct to the best of my knowledge and belief.</p>
-        <p class="sign">SHUBHAM PRAJAPATI</p>
-      </section>
-    </main>
+    <!-- Certifications -->
+    <section class="certifications section-card">
+      <div class="section-header">
+        <i class="fas fa-award"></i>
+        <h2>CERTIFICATIONS</h2>
+      </div>
+      <div class="cert-list">
+        <div class="cert-item">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>BASE SAS Certified</strong>
+            <span>SAS Institute</span>
+          </div>
+        </div>
+        <div class="cert-item">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>R Programming for Beginners</strong>
+            <span>Simplilearn</span>
+          </div>
+        </div>
+        <div class="cert-item">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <strong>Certificate in Computer Concepts</strong>
+            <span>BAOU</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Declaration -->
+    <section class="declaration section-card">
+      <div class="section-header">
+        <i class="fas fa-file-signature"></i>
+        <h2>DECLARATION</h2>
+      </div>
+      <p>I hereby declare that all the information provided is true and correct to the best of my knowledge and belief.</p>
+      <div class="signature">
+        <span>Shubham Prajapati</span>
+      </div>
+    </section>
+
   </div>
 
+  <!-- Download Button -->
   <a href="pdf/shubham-cv.pdf" download class="download-btn">
-    <i class="fas fa-download"></i> Download CV
+    <i class="fas fa-download"></i>
+    Download PDF
   </a>
-  
-  <script>
-    // Simple fade-in animation on scroll
-    document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('.fade-in');
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, { threshold: 0.1 });
-
-      sections.forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
-      });
-    });
-  </script>
 </body>
 </html>
-
